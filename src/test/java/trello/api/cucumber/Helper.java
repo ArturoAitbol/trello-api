@@ -1,7 +1,8 @@
-package trello.api.cucumber;
+package trello.api;
 
 import io.restassured.response.Response;
 import trello.api.Board;
+import trello.api.BodyType;
 import trello.api.List;
 
 import java.util.Map;
