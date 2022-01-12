@@ -1,0 +1,16 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+.gradle/
+
+# Ignore reports
+reports/cucumber/
+#reports/cucumber-report/
+reports/html/
+
+# Ignore Gradle build output directory
+build
+
+.idea
+
+# Logs
+*/*.log

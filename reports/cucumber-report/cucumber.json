@@ -1,0 +1,95 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-01-12T15:17:06.858Z",
+        "line": 9,
+        "name": "Verify status code from all Boards",
+        "description": "",
+        "id": "trello-get-all-boards;verify-status-code-from-all-boards",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1357783600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "endpoint \"/1/members/me/boards\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/1/members/me/boards\"",
+                  "offset": 9
+                }
+              ],
+              "location": "trello.api.cucumber.TrelloApiSteps.setEndpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6394836300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "method GET",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 7
+                }
+              ],
+              "location": "trello.api.cucumber.TrelloApiSteps.setHttpMethod(trello.api.RequestType)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 16955600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 12
+                }
+              ],
+              "location": "trello.api.cucumber.TrelloApiVerificationSteps.status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Board"
+          },
+          {
+            "name": "@getAllBoards"
+          }
+        ]
+      }
+    ],
+    "name": "Trello get all Boards",
+    "description": "  As an user\n  I want to get all boards from Trello\n  Verifying the status code.",
+    "id": "trello-get-all-boards",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TrelloBoardGet.feature",
+    "tags": [
+      {
+        "name": "@Board",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
